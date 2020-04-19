@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Search";
+}
+
+<h2>Search</h2>
+
+@using (Html.BeginForm("Search", "Card", FormMethod.Post, new { @class = "form-inline" }))
+{
+    <div class="form-group">
+        <input type="text" name="id" id="searchtxt" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="submit" class="btn btn-success form-control" value="Search" />
+    </div>
+}

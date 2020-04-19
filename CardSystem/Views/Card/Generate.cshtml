@@ -1,0 +1,20 @@
+﻿@model CardSystem.Models.CardData
+@{
+    ViewBag.Title = "Generate";
+}
+
+<h2>Generate</h2>
+<div class="row p-5 border border-dark">
+    <div class="col-12">
+        <h4 class="h4 text-dark">Card Data</h4>
+    </div>
+    <div class="col-4">
+        <img src="https://via.placeholder.com/400" class="img-fluid" title="user image"/>
+    </div>
+    <div class="col-8">
+        <h5 class="h5 text-dark">@Model.Name</h5>
+        
+        <img src="@Model.Barcode" style="max-height:75px; max-width:100%"/>
+    </div>
+    
+</div>

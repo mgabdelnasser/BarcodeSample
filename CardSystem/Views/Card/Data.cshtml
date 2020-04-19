@@ -1,0 +1,45 @@
+﻿@model CardSystem.Models.CardData
+
+@{
+    ViewBag.Title = "Data";
+}
+
+<div class="p-3 m-4">
+    <h4>CardData</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+
+        <dd>
+            <img src="https://via.placeholder.com/400" class="img-fluid" title="user image" style="max-height:100px" />
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Barcode)
+        </dt>
+
+        <dd>
+            <img src="@Model.Barcode" class="img-fluid" style="max-height:100px"/>
+        </dd>
+
+    </dl>
+</div>
+
